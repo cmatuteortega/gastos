@@ -25,7 +25,7 @@ jobs:
         uses: gradle/actions/setup-gradle@v4
 
       - name: Compilar APK debug
-        run: gradle assembleDebug --no-daemon
+        run: ./gradlew assembleDebug --no-daemon
 
       - name: Subir APK como artifact descargable
         uses: actions/upload-artifact@v4
